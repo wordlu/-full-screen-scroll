@@ -1,0 +1,48 @@
+body {
+    background: url("../img/sub_back.jpg") no-repeat fixed;
+}
+
+.body {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    right: 20%;
+}
+.body .nav {
+    cursor: pointer;
+}
+.body h2 {
+    font-size: 32px;
+    line-height: 40px;
+    /*font-weight: bold;*/
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #333333;
+}
+.con .title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 20px;
+    color: #000000;
+    border-bottom: 4px solid #3381be;
+    width: 80px;
+}
+.con .content {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    text-indent: 30px;
+    line-height: 26px;
+
+}
+.con .con_img {
+    margin: 20px auto;
+    text-align: center;
+}
+.footer {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    background: rgba(0,0,0,0);
+}

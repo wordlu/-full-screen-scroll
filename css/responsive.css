@@ -1,0 +1,79 @@
+@media screen and (max-width:1590px){
+	#header .tel {display: none;}
+}
+@media screen and (max-width:1190px){
+	#header .title {display: none;}
+	#header .tel {display: block;}
+}
+@media screen and (max-width:730px){
+	#header .title {display: none;}
+	#header .tel {display: none;}
+}
+@media screen and (max-width:1080px){
+	#header .tel {display: none;}
+	#section1 #slide4 { background: url(../img/wallpaper-1.jpg) no-repeat; background-size: cover;}
+	#section1 #slide4 .content {display: block;}
+}
+
+@media screen and (max-width:1025px){
+	.adapt {display: block;}
+	.pc {display: none;}
+	#header .tel {display: none;}
+	#section1 #slide4 { background: url(../img/wallpaper-1.jpg) no-repeat; background-size: cover;}
+	#section1 #slide4 .content {display: block;}
+ 
+	#section6 .main { position: relative; top: -30%;}
+	#section6 .tabs {  position: relative;  }
+	#section6 .tabs li {display: inline-block; }
+	#section6 .tabs label {position: relative; left: 100%;}
+	#section6 .tabs,#section6 .find,#section6 .address { position: absolute; left: -10%; }
+	#section6 .tabs .find  {display: none;}
+	#section6 .address {display: block; width: 500px; position: relative; left: 30%;}
+}
+@media screen and (max-width:460px){
+	#header img {width: 80%;}
+	#section1 #slide1 h1 {font-size: 30px;}
+	#section1 #slide1 p {font-size: 18px; letter-spacing: 5px;}
+	#section1 #slide3 h3 { font-size: 30px; position: relative; top: 25%; }
+	#section1 #slide3 h2,#section1 #slide2 h2 {font-size: 18px;}
+	#section1 #slide3 p {font-size: 12px; margin:10px 0;}
+	#section1 #slide4 h2 { font-size: 30px; }
+	#section1 #slide4 p {font-size: 12px; margin: 10% 15%; text-indent: 24px;}
+
+	#section2 h2 { font-size: 30px;  }
+	#section2 p { font-size: 14px; margin-top: 10px;}
+	#section2 .content>p {text-indent: 28px;}
+	#section2 .block:hover .con {display: none;}
+	#section2 .block { margin: 0; width: 120px; height: 150px; }
+	#section2 .block img {width: 100px; height: 100px; margin: 0;}
+
+	#section3 h2 { font-size: 30px; }
+	#section3 p {font-size: 14px;}
+	#section3 .block { margin: 0; width: 120px; height: 150px; }
+	#section3 .block img {width: 120px; height: 150px; margin: 0;}
+	#section3 .block .con { width: 120px; height: 150px; }
+	#section3 .block .con p {display: none;}
+	#section3 .block .con a{ margin-top: 10px; }
+
+	#section4 h2 {font-size: 30px; margin: 0 auto;}
+	#section4 .con {width: 80%; margin: 5% auto;}
+	#section4 .con p {font-size: 16px;}
+
+	#section5 h1 { font-size: 30px; text-align: center; }
+	#section5 {background-size: cover;}
+	#section5 p {font-size: 20px;}
+	#section5 .chaxun {display: none;}
+
+	#section6 .main {position: relative; top: -50%;}
+	#section6 .tabs {position: absolute; left: 0;}
+	#section6 .tabs li {width: 15%;}
+	#section6 .tabs label {padding: 5px; position: relative; left: 10%;}
+	#section6 .tab_content { position: absolute; top: 30px; left: 0; }
+	.tabs .about img {width: 80px; height: 80px;}
+	#section6 p { font-size: 14px; width: 50%; }
+	#section6 #tab_content2 {left: -5%;}
+	#section6 #tab_content2 h2 {width: 100%; padding: 10px;}
+	#section6 .adapt { top: 0; left: 0; margin: 0;}
+	#section6 .address { left: 10%; }
+
+}

@@ -1,0 +1,141 @@
+/* Reset CSS 重置样式
+* --------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { padding: 0; margin: 0; }
+a { text-decoration: none; }
+table { border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-weight: normal; font-style: normal; }
+strong { font-weight: bold; }
+ol, ul { list-style: none; margin: 0; padding: 0; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; margin: 0; padding: 0; color: #444; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+body { font-family: "微软雅黑",arial, helvetica; color: #000; }
+h1 { font-size: 6em; }
+/*p {  }*/
+
+/* 公共样式
+* --------------------------------------- */
+
+.content { position: relative;	/*top: 50%;*/	/*transform: translateY(-50%);*/
+text-align: center; }
+.content h1, .content p { letter-spacing: 20px; margin-bottom: 20px; }
+.content p {font-size: 2em;}
+.content h2 { color: #fff; font-size: 36px; letter-spacing: 10px; }
+.adapt {display: none; }
+
+
+/* header
+* --------------------------------------- */
+#header {position: fixed; top: 0; width: 100%; height: 70px; line-height: 70px; background: rgba(0, 0, 0, 0.5);	/*opacity: 0.5;*/ z-index: 1; }
+#header img { float: left; z-index: 999; position: relative; top: 20px; left: 5%; }
+#header .title { position: relative; left: 5%; }
+#header #menu { position: relative; left: 5%; }
+#header li { float: left; margin: 0 20px 10px 40px; }
+#header li a, #header p { color: #fff; }
+#header .tel { float: left; position: absolute; right: 5%; font-size: 16px; width: 300px; }
+#header .tel img { width: 33px; height: 33px; top: 18px; position: relative; }
+#header .tel p { position: relative; left: 25px; font-size: 24px; }
+.active a { color: #3381be; font-weight: bold; border-top: 4px solid #3381be; font-size: 20px; padding-top: 17px; }
+.fp-slidesNav a { border: none; } /* fullpage自带css的更改 */
+
+/* Section 1
+* --------------------------------------- */
+#section1 #slide1 { background: url(../img/wallpaper1.jpg) no-repeat;  background-size: cover;}
+/*#section1 #slide1 img { position: fixed; z-index: 1; width: 33%; height: 150%; top: -18%; left: 0; }*/
+#section1 #slide2 { background: url(../img/wallpaper5.jpg) bottom center; background-size: cover;}
+#section1 #slide3 { background: url(../img/wallpaper6.jpg) bottom center; background-size: cover;}
+#section1 #slide4 { background: url(../img/wallpaper10.jpg) no-repeat left center; background-size: cover; }
+#section1 #slide5 { background: url(../img/wallpaper11.png) no-repeat left center; background-size: cover; }
+#slide3 h3 { color: #fff; font-size: 60px; letter-spacing: 20px; letter-spacing: 10px; }
+#slide3 h2 {margin-top: 50px;}
+#slide3 p {letter-spacing: 1px; font-size: 24px; margin: 30px 0; margin-left: 300px;}
+#slide1 p {margin-top: 50px;}
+#section1 h1 { color: #fff; }
+#section1 p { color: #fff; opacity: 0.6; }
+
+#section1 #slide2 .adapt h2 {margin: 10%;}
+#slide4 .content {display: none;}
+#slide4 p {letter-spacing: 1px; font-size: 20px; margin: 20px 10% 0 10%; text-indent: 40px;}
+/* Section 2
+* --------------------------------------- */
+#section2 { background: url(../img/wallpaper2.jpg) left center;background-size: cover;  }
+#section2 h2 {color: #1d8ae9; letter-spacing: 1px;}
+#section2 .content>h2,#section2 .content>p {position: relative; top: -9999px;}
+#section2 p {font-size: 20px; letter-spacing: 5px; margin: 30px 0; opacity: 0.9;}
+#section2 .blo {overflow: hidden;}
+#section2 .block {display: inline-block; margin:30px 50px 0 50px;width: 180px; height: 270px; overflow: hidden;}
+#section2 .block .con { position: absolute; width: 180px; height: 400px; z-index: 999; top: 165px; display: none; color: #fff; background: rgba(0,0,0,0.9); border-radius: 20px; text-align: center; }
+#section2 .block:hover .con {display: block;}
+#section2 .block .con p {font-size: 16px; letter-spacing: 1px; text-indent: 32px; margin: 10px;}
+#section2 .block .con a{ border: none; font-weight: normal; text-decoration: underline; position: relative; font-size: 18px; margin:10px;}
+#section2 .block .con h2 {font-size: 20px; margin: 15px;}
+#section2 .block img {width: 150px; height: 150px; margin: 15px; }
+#section2 .bloock img:hover {}
+
+
+/* Section 3
+* --------------------------------------- */
+#section3 { background: url(../img/wallpaper8.jpg);background-size: cover; }
+#section3 h2 { color: #000; font-size: 24px; }
+#section3 .block h3 { font-size: 20px; font-weight: normal; color: #000; text-align: center; padding: 10px; background: rgba(255, 255, 255, 0.5); margin-top: 20px; position: relative; }
+#section3 p { font-size: 20px; letter-spacing: 5px; margin: 30px 0; opacity: 0.9; color: #333; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -ms-transition: all 0.2s linear; transition: all 0.2s linear; }
+#section3 .block { width: 280px; height: 300px; border: 10px solid #fff; display: inline-block; overflow: hidden; position: relative; text-align: center; z-index: 999; -webkit-box-shadow: 1px 1px 2px #e6e6e6; -moz-box-shadow: 1px 1px 2px #e6e6e6; box-shadow: 1px 1px 2px #e6e6e6; cursor: default; background: rgba(0, 0, 0, 0.6); }
+#section3 .block p { background: #000; color: #fff; font-size: 14px; padding: 10px 20px 20px; text-align: center; opacity: 0; }
+#section3 .block a.info { display: inline-block; text-decoration: none; padding: 7px 14px; background: #000; color: #fff; border: none; font-size: 16px; -webkit-box-shadow: 0 0 1px #000; -moz-box-shadow: 0 0 1px #000; box-shadow: 0 0 1px #000; }
+#section3 .block img { border-bottom: 3px solid #1d8ae9; opacity: 0.9; display: block; position: relative; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+#section3 .block .con { width: 280px; height: 300px; position: absolute; overflow: hidden; top: 0; left: 0; background: rgba(122, 122, 122, 0.3); transform: translateX(-300px); -webkit-transform: translateX(-300px); -moz-transform: translateX(-300px); -o-transform: translateX(-300px); -ms-transform: translateX(-300px); opacity: 1; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+#section3 .block:hover .con { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -o-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0px); }
+#section3 .block:hover img { -webkit-transform: translateX(300px); -moz-transform: translateX(300px); -o-transform: translateX(300px); -ms-transform: translateX(300px); transform: translateX(300px); }
+#section3 .block:hover p { opacity: 1; }
+
+
+/* Section 4
+* --------------------------------------- */
+#section4 { background: url(../img/wallpaper4.jpg) no-repeat center; background-size: 100% 120%; background-size: cover;}
+#section4 h2 { color: #fff; position: relative; right: -140%; }
+#section4 .con { width: 38%; margin: 50px 200px;}
+#section4 .con p {font-size: 18px; letter-spacing: 1px;font-family: "微软雅黑"; color: #fff; opacity: 0.8; text-align: left; text-indent: 40px; position: relative; left: -150%;}
+/* Section 5
+* --------------------------------------- */
+#section5 { background: url(../img/wallpaper7.jpg) no-repeat center; background-size: 100% 100%;}
+#section5 h1 { color: #fff; font-size: 36px; top: -100%;}
+#section5 p { opacity: 0.6;}
+#section5 h1,#section5 p {position: relative;  }
+.content .btn{font-size: 20px; letter-spacing: 1px; border: 1px solid #fff; color: #fff; border-radius: 20px; text-align: center; width: 180px; height: 30px; line-height: 30px;cursor: pointer; margin: auto; margin-top: 10px; position: relative;}
+.content .btn_chaxun{display: inline-block;  position: relative;} 
+.content .chaxun { width: 660px; height: 430px; /*border: 1px solid #666;*/ position: relative; z-index: 999; display: block;  background: rgba(0,0,0,0.1); top: 100px; padding: 10px; border-radius: 20px;}
+.content .chaxun .pic_arr {padding: 10px;}
+.content .chaxun img {width: 150px; height: 60px; margin: 5px; float: left; transition:transform 0.25s ease-in-out;}
+.content .chaxun img:hover {transform:scale(1.1,1.1);}
+.content .shenqing {width: 660px; height: 370px; border: 1px solid #666; position: absolute; left: -370px; z-index: 999; display: block; top: -67px;  background: rgba(0,0,0,0.1);}
+.btn_chaxun:hover .chaxun {display: block;}
+.btn_shenqing:hover .shenqing {display: block;}
+
+
+
+/* Section 6
+* --------------------------------------- */
+#section6 { background: url(../img/wallpaper3.jpg) no-repeat center; background-size: 100% 100%;  background-size: cover;}
+#section6 h1 { color: #000; }
+#section6 p { opacity: 0.6; }
+.tabs input[type=radio] {position: absolute; top: -9999px; left: -9999px; }
+.tabs {width: 650px; float: none; list-style: none; position: absolute; top: 10%; left: 30%; padding: 0; margin: 75px auto;}
+.tabs li {z-index: 1000;width: 150px; text-align: center;}
+.tabs label {background: rgba(0,0,0,0.5); display: block; padding: 10px 20px; color: #fff; font-size: 18px; font-weight: normal; font-family: 'Roboto',helveti; cursor: pointer; position: relative;top:0; left: -300px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease; transition: all 0.2s ease-in-out;}
+.tabs label:hover {background: #999; top: 0;}
+[id^=tab]:checked + label {background: #666; color: white; top: 0;}
+[id^=tab]:checked ~ [id^=tab_content] {display: block;}
+.tab_content {display: none; text-align: left; width: 100%; font-size: 20px; line-height: 140%; padding-top: 10px; background: rgba(0,0,0,0); padding: 15px; color: rgba(0,0,0,1); position: absolute; top: 100px; left: 100px; box-sizing: border-box; -webkit-animation-duration: 0.5s; -o-animation-duration: 0.5s;-moz-animation-duration: 0.5s; animation-duration: 0.5s;}
+.animated {display: inline-block; margin: 0 auto;}
+.tabs .about {margin:20px;}
+.tabs .about img {width: 100px; height: 100px; float: left; margin-right: 20px;}
+.tabs .find { width: 150px; display: inline-block; }
+.tabs .find img {width: 100px; height: 100px; margin:30px;  }
+.tabs .find h2 { text-align: center; width: 150px; background: rgba(0,0,0,0.1); border-radius: 30px;}
+.tabs .address h2 { margin-bottom: 40px; font-size: 18px;}
+.tabs .address p {font-size: 14px; margin-bottom: 5px;}
+.tabs .address img {position: relative; top: 3px;}
+
+.tabs .adapt h2 { text-align: center; margin: 20px; font-size: 24px; border: 2px solid #666; border-radius: 5%; }
